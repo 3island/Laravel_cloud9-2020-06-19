@@ -1,0 +1,15 @@
+$ php artisan route:list
+
+# 実行結果（ユーザ操作などのルーティングは省略）
++--------+-----------+-----------------------+----------------+-----------------------------------------------------+-----------------+
+| Domain | Method    | URI                   | Name           | Action                                              | Middleware      |
++--------+-----------+-----------------------+----------------+-----------------------------------------------------+-----------------+
+|        | GET|HEAD  | tweet                 | tweet.index    | App\Http\Controllers\TweetController@index          | web             |
+|        | POST      | tweet                 | tweet.store    | App\Http\Controllers\TweetController@store          | web             |
+|        | GET|HEAD  | tweet/create          | tweet.create   | App\Http\Controllers\TweetController@create         | web             |
+|        | GET|HEAD  | tweet/{tweet}         | tweet.show     | App\Http\Controllers\TweetController@show           | web             |
+|        | PUT|PATCH | tweet/{tweet}         | tweet.update   | App\Http\Controllers\TweetController@update         | web             |
+|        | DELETE    | tweet/{tweet}         | tweet.destroy  | App\Http\Controllers\TweetController@destroy        | web             |
+|        | GET|HEAD  | tweet/{tweet}/edit    | tweet.edit     | App\Http\Controllers\TweetController@edit           | web             |
++--------+-----------+-----------------------+----------------+-----------------------------------------------------+-----------------+
+
